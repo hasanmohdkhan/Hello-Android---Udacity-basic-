@@ -1,6 +1,6 @@
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/hasanmohdkhan/Hello-Android---Udacity-basic-/blob/master/img_2.jpeg "Optional Title")
 
 
 <div align="center">
-    <img src="/screenshots/screen1.jpg" width="400px"</img> 
+    <img src="https://github.com/hasanmohdkhan/Hello-Android---Udacity-basic-/blob/master/img_2.jpeg" width="400px"</img> 
 </div>
