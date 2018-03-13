@@ -8,6 +8,7 @@
 </div>
 <br>
 
-<div align="center">
-    <video src="https://www.youtube.com/watch?v=r2miSrwuSg4" width="600px"</img> 
-</div>
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=r2miSrwuSg4](https://www.youtube.com/watch?v=r2miSrwuSg4)
+
+
+
