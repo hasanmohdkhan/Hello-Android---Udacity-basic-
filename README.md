@@ -9,7 +9,7 @@
 <br>
 
 <a href="https://www.youtube.com/watch?v=r2miSrwuSg4" target="_blank"><img src="https://github.com/hasanmohdkhan/Hello-Android---Udacity-basic-/blob/master/youtube.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 
 
