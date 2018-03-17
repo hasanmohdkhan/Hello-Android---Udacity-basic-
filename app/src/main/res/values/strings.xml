@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Hello Android</string>
     <string name="content_description">icon</string>
+    <string name="udacity">Udacity</string>
+    <string name="company">Company</string>
+    <string name="address_udacity">2465 Latham St Mountain View, CA 94043</string>
+    <string name="number_udacity">650&#8211;555&#8211;5555</string>
+    <string name="location_udacity">location</string>
+    <string name="website_udacity">www.udacity.com</string>
+    <string name="phone_udacity">Phone</string>
+    <string name="website_udacity_title">Website</string>
 </resources>

@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<ListDataModel> list = new ArrayList<>();
-        list.add(new ListDataModel("Udacity", "Company", R.drawable.ic_domain_grey600_48dp));
-        list.add(new ListDataModel("2465 Latham St Mountain View, CA 94043", "location", R.drawable.ic_google_maps_grey600_48dp));
-        list.add(new ListDataModel("650-555-5555", "Phone", R.drawable.ic_phone_grey600_48dp));
-        list.add(new ListDataModel("www.udacity.com", "Website", R.drawable.ic_earth_grey600_48dp));
+        list.add(new ListDataModel(getString(R.string.udacity), getString(R.string.company), R.drawable.ic_domain_grey600_48dp));
+        list.add(new ListDataModel(getString(R.string.address_udacity), getString(R.string.location_udacity), R.drawable.ic_google_maps_grey600_48dp));
+        list.add(new ListDataModel(getString(R.string.number_udacity), getString(R.string.phone_udacity), R.drawable.ic_phone_grey600_48dp));
+        list.add(new ListDataModel(getString(R.string.website_udacity), getString(R.string.website_udacity_title), R.drawable.ic_earth_grey600_48dp));
         ListView listView = findViewById(R.id.list);
         Adaptor mAdapter = new Adaptor(this, list);
         listView.setAdapter(mAdapter);
