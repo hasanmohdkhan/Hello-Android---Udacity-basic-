@@ -12,10 +12,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by hasanZian on 09-03-2018.
- */
-
 public class Adaptor extends ArrayAdapter<ListDataModel> {
 
 
