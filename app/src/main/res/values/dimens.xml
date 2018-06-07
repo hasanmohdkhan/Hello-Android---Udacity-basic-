@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageview_width">24dp</dimen>
+    <dimen name="imageview_height">24dp</dimen>
+    <dimen name="imageview_margin_sixteen_dp">16dp</dimen>
+    <dimen name="main_heading_tx_size_fourteen_sp">14sp</dimen>
+    <dimen name="list_linearlayout_margin_sixteen_dp">16dp</dimen>
+    <dimen name="list_height">80dp</dimen>
+</resources>

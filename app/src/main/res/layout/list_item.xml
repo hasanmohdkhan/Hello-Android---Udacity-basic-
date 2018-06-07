@@ -1,58 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="72dp"
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height"
+    android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    <LinearLayout style="@style/IconLinearlayout">
         <ImageView
             android:id="@+id/icon"
-            android:layout_gravity="center"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="16dp"
-            tools:src="@drawable/domain"
-            android:contentDescription="@string/content_description"/>
+            style="@style/ImageView"
+            android:contentDescription="@string/content_description"
+            tools:src="@drawable/domain" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-
-
+    <LinearLayout style="@style/ListLinearLayout"
         >
 
         <TextView
             android:id="@+id/title_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextViewSameWidthHeight"
             android:fontFamily="@font/roboto_black"
-            tools:text="Company Name"
-            android:textSize="14sp"/>
+            android:textSize="@dimen/main_heading_tx_size_fourteen_sp"
+            tools:text="Company Name" />
 
         <TextView
             android:id="@+id/title_sub"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextViewSameWidthHeight"
             android:fontFamily="@font/roboto"
             tools:text="Udacity"
             />
 
-        <View
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
+        <View style="@style/View" />
     </LinearLayout>
 
 
