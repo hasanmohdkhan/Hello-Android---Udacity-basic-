@@ -6,4 +6,7 @@
     <dimen name="main_heading_tx_size_fourteen_sp">14sp</dimen>
     <dimen name="list_linearlayout_margin_sixteen_dp">16dp</dimen>
     <dimen name="list_height">80dp</dimen>
+    <dimen name="cardview_height">260dp</dimen>
+    <dimen name="cardview_elevation">4dp</dimen>
+    <dimen name="land_layout_card_width">312dp</dimen>
 </resources>

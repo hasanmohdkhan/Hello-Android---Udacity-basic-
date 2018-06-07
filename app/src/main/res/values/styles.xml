@@ -13,7 +13,6 @@
         <item name="android:layout_height">@dimen/imageview_height</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_margin">@dimen/imageview_margin_sixteen_dp</item>
-
     </style>
 
     <style name="ListLinearLayout">
@@ -42,6 +41,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWidHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
     </style>
 
 </resources>
