@@ -10,4 +10,11 @@
     <string name="phone_udacity">Phone</string>
     <string name="website_udacity_title">Website</string>
     <string name="main_image_description">logo of business</string>
+    <string name="locstion">2465 Latham St Mountain View, CA 94043</string>
+    <string name="urlformap">http://maps.google.co.in/maps?q=</string>
+    <string name="website">http://www.udacity.com</string>
+    <string name="toast_msg">Permission is required to call</string>
+    <string name="telnumber">tel:650-555-5555</string>
+    <string name="toast_msg_granted">Permission granted</string>
+    <string name="toast_msg_deny">Permission denied</string>
 </resources>

@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -40,9 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
                 if (position == 1) {
-                    String str_location = "2465 Latham St Mountain View, CA 94043";
-                    String map = "http://maps.google.co.in/maps?q=" + str_location;
-                    // where str_location is the address string
+                    String str_location = getString(R.string.locstion);
+                    String map = getString(R.string.urlformap) + str_location;
                     Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(map));
                     startActivity(i);
                 }
@@ -54,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (position == 3){
 
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.udacity.com"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.website)));
                     startActivity(browserIntent);
                 }
 
@@ -66,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
     private void call_action() {
 
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:650-555-5555"));
+        callIntent.setData(Uri.parse(getString(R.string.telnumber)));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(getApplicationContext(),"Permission is required to call",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.toast_msg, Toast.LENGTH_SHORT).show();
             return;
         }
         startActivity(callIntent);
@@ -78,17 +76,13 @@ public class MainActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(android.Manifest.permission.CALL_PHONE)
                     == PackageManager.PERMISSION_GRANTED) {
-                Log.v("TAG","Permission is granted");
                 return true;
             } else {
-
-                Log.v("TAG","Permission is revoked");
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 1);
                 return false;
             }
         }
         else { //permission is automatically granted on sdk<23 upon installation
-            Log.v("TAG","Permission is granted");
             return true;
         }
     }
@@ -102,16 +96,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(getApplicationContext(), "Permission granted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.toast_msg_granted, Toast.LENGTH_SHORT).show();
                     call_action();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Permission denied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.toast_msg_deny, Toast.LENGTH_SHORT).show();
                 }
-                return;
             }
-
-            // other 'case' lines to check for other
-            // permissions this app might request
         }
     }
 

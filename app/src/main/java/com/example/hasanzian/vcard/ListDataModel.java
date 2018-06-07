@@ -1,9 +1,5 @@
 package com.example.hasanzian.vcard;
 
-/**
- * Created by hasanZian on 09-03-2018.
- */
-
 public class ListDataModel {
     private String mTitle;
     private String mSubTitle;

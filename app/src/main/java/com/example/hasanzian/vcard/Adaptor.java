@@ -31,19 +31,13 @@ public class Adaptor extends ArrayAdapter<ListDataModel> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-
         ListDataModel currentPostion =getItem(position);
-        TextView titleTv = (TextView)listItemView.findViewById(R.id.title_main);
-        TextView titleSubTv = (TextView)listItemView.findViewById(R.id.title_sub);
-        ImageView icon = (ImageView)listItemView.findViewById(R.id.icon);
+        TextView titleTv = listItemView.findViewById(R.id.title_main);
+        TextView titleSubTv = listItemView.findViewById(R.id.title_sub);
+        ImageView icon = listItemView.findViewById(R.id.icon);
         titleTv.setText(currentPostion.getmTitle());
         titleSubTv.setText(currentPostion.getmSubTitle());
         icon.setImageResource(currentPostion.getmIcon());
-
-
-
-
-
         return  listItemView;
 
     }
